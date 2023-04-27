@@ -1,10 +1,17 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.mais{
+    display: none;
+}
+
 body{
     font-family: tahoma;
     font-size: 15px;
     line-height: 1.75;
     margin: 0;
     padding: 0;
-    
 }
 
 #timeline{
@@ -142,6 +149,16 @@ p{
     font-weight: normal;
 }
 
+.fa-arrow-down{
+    color: white;
+}
+
+.fa-arrow-up{
+    color: white;
+}
+
+
+
 @media screen and (max-width:1065px){
     #timeline{
         display: flex;
@@ -150,6 +167,7 @@ p{
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+
     }
 
     .item{
@@ -170,6 +188,10 @@ p{
     .item:active{
         width: 50% !important;
     }
+
+    .mais{
+        display: block;
+    }
 }
 
 @media screen and (max-width:800px) and (min-width:600px){
@@ -185,6 +207,10 @@ p{
         padding: 3px;
     }
 
+    .mais{
+        display: block;
+    }
+
 }
 
 @media screen and (max-width:521px){
@@ -196,9 +222,8 @@ p{
         flex-wrap: wrap;
         text-align: center;
         align-items: center;
-        
-        
     }
+
     .item{
         transform: translate3d(0,0,0);
         position: relative;
@@ -209,11 +234,17 @@ p{
         overflow: hidden;
         transition: width 0.5s ease;
     }
+
     .item:hover{
         width: 100% !important;
     }
+
     .item:active{
         width: 100% !important;
+    }
+
+    .mais{
+        display: block;
     }
 }
 
